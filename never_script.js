@@ -145,6 +145,129 @@ const questions = [
     },
     {
         q: "edited my selfies."
+    },
+    {
+        q: "marched in a protest."
+    },
+    {
+        q: "overdrafted my bank account."
+    },
+    {
+        q: "read a partner's text messages."
+    },
+    {
+        q: "been hospitalized for something."
+    },
+    {
+        q: "sang in public."
+    },
+    {
+        q: "sent a stranger a drink."
+    },
+    {
+        q: "accepted a drink from a stranger."
+    },
+    {
+        q: "lied about my income."
+    },
+    {
+        q: "thought a friend's baby was ugly."
+    },
+    {
+        q: "won more than $50 gambling."
+    },
+    {
+        q: "lost more than $50 gambling."
+    },
+    {
+        q: "lied about my age."
+    },
+    {
+        q: "cut in line on purpose."
+    },
+    {
+        q: "snooped through a friend's room, cabinets or property."
+    },
+    {
+        q: "worked with someone I couldn't stand."
+    },
+    {
+        q: "been in a talent show."
+    },
+    {
+        q: "driven a stick shift."
+    },
+    {
+        q: "been scuba diving."
+    },
+    {
+        q: "purposely given someone bad advice."
+    },
+    {
+        q: "thrown someone else a surprise party."
+    },
+    {
+        q: "been dumpster diving."
+    },
+    {
+        q: "returned something after I wore it."
+    },
+    {
+        q: "been in a helicopter."
+    },
+    {
+        q: "parked in a handicap spot."
+    },
+    {
+        q: "changed a tyre."
+    },
+    {
+        q: "broken someone else's heart."
+    },
+    {
+        q: "wished I had kids."
+    },
+    {
+        q: "drank an entire bottle of wine."
+    },
+    {
+        q: "witnessed a crime."
+    },
+    {
+        q: "donated blood."
+    },
+    {
+        q: "dropped a baby."
+    },
+    {
+        q: "run a red light."
+    },
+    {
+        q: "been the subject of a rumor that wasn't true."
+    },
+    {
+        q: "spread a rumor I knew wasn't true."
+    },
+    {
+        q: "cried at work."
+    },
+    {
+        q: "left a mean YouTube comment."
+    },
+    {
+        q: "called the cops on someone."
+    },
+    {
+        q: "left a negative review."
+    },
+    {
+        q: "blamed someone else for my mistake at work."
+    },
+    {
+        q: "stolen something from my workplace."
+    },
+    {
+        q: "had a paranormal experience."
     }
 ];
 let current = 0;
