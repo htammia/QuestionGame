@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_questions.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
@@ -10,13 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Time to get deep...</h1>
-
-    <div class="selection">
-      <button class="button" id="truths">Truths</button>
-      <button class="button" disabled id="rather">Would You Rather</button>
-      <button class="button" id="never">Never Have I Ever</button>  
+    <h1>Never have I ever...</h1>
+    <div class="content">
+        <div class="question_container" id="question_container">
+            <div class="question" id="question">Question here</div>
+        </div>
+        <div class="button_container" id="button_containter">
+            <button type="button" id="next">Next</button>
+        </div>
     </div>
-    <script type="text/javascript" src="index_script.js"></script>
+    <script type="text/javascript" src="never_script.js"></script>
   </body>
 </html>

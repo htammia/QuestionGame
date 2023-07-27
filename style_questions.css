@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(42, 35, 59);
+    background-image: url("pics/coral.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+
+    font-size: 5vh;
+    font-family: Zen Kurenaido;
+    color: rgb(224, 213, 221);
+    text-align: center;
+
+    background: -webkit-linear-gradient(#ffffff, #ffffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+.content {
+
+    display: flex;
+    flex-direction: column;
+    /*background-color: pink;*/
+    margin: 0;
+    margin-top: 20%;
+
+}
+
+@media screen and (max-width: 850px) {
+    .content {
+        margin-top: 25%;
+    }
+}
+.question_container {
+    background-color: rgb(224, 213, 221);
+    height: 20vh;
+    margin-top: 10vh;
+    margin: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+}
+.question {
+    /*background-color: orange;*/
+    border-radius: 8px;
+    font-size: 4vw;
+    font-family: Zen Kurenaido;
+    color: rgb(42, 35, 59);
+    width: 100%;
+    text-align: center;
+
+}
+
+.button_container {
+    height: 10vh;
+    /*background-color: red;*/
+    display: flex;
+    align-items :start;
+    justify-content: center;
+    
+}
+
+button {
+    background-color: rgba(110, 63, 163, 0.8);
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+
+    color: rgb(224, 213, 221);
+    font-size: 2vh;
+    font-family: Roboto;
+
+    border: 2px solid #4F40D2;
+    border-radius: 8px;
+
+    transition-duration: 0.2s;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #4F40D2;
+    color: rgb(224, 213, 221);
+}
+
+button:active {
+    border-color: rgb(42, 35, 59);
+    background-color: #4F40D2;
+}
