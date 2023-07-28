@@ -63,10 +63,10 @@ h1 {
     display: flex;
     align-items :start;
     justify-content: center;
-    
+    gap: 3vh;
 }
 
-button {
+.button {
 
     background-color: rgba(110, 63, 163, 0.8);
     padding: 1%;
@@ -76,6 +76,7 @@ button {
     color: rgb(224, 213, 221);
     font-size: 2vh;
     font-family: Roboto;
+    text-decoration: none;
 
     border: 2px solid #4F40D2;
     border-radius: 8px;
