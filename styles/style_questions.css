@@ -86,12 +86,12 @@ h1 {
     
 }
 
-button:hover {
+.button:hover {
     background-color: #4F40D2;
     color: rgb(224, 213, 221);
 }
 
-button:active {
+.button:active {
     border-color: rgb(42, 35, 59);
     background-color: #4F40D2;
 }
@@ -114,7 +114,7 @@ button:active {
         margin-left: 20vh;
         margin-right: 20vh;
     }
-    button {
+    .button {
         font-size: 3vh;
     }
 }
