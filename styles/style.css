@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 10vw;
     font-family: Zen Kurenaido;
     color: rgb(224, 213, 221);
     text-align: center;
@@ -18,16 +18,16 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    
+    margin-top: 5rem;
     margin-bottom: 10rem;
 }
 
 .button {
     background-color: rgb(224, 213, 221);
     padding: 4%;
-    margin: 2% 5%;
+    margin: 4% 5%;
 
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-family: Roboto;
 
     border: 2px solid #4F40D2;
@@ -66,7 +66,8 @@ h1 {
 }
 
 
-@media screen and (max-width: 850px) {
+
+@media screen and (min-width: 500px) {
     h1 {
         font-size: 8vw;
         margin-top: 5vw;
@@ -91,12 +92,19 @@ h1 {
     }
 }
 @media screen and (min-width: 851px) {
+    h1 {
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
     .selection {
         width: 50%;
         position: absolute;
         top: 50%;
         bottom: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(50%, -40%);
+    }
+    .button {
+        padding: 3%;
     }
     
 }
