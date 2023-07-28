@@ -270,43 +270,44 @@ const questions = [
         q: "had a paranormal experience."
     }
 ];
-let current = 0;
+
 const order = initialiseOrder(questions.length);
+let current = order.pop();
 
 const questionText = document.getElementById("question");
-
+console.log(current)
 questionText.innerHTML = questions[current].q;
 
 nextButton = document.getElementById("next");
 
 nextButton.addEventListener("click", function(){
-    current++;
-    if (current == questions.length) {
+    current = order.pop();
+    console.log(order.length);
+    if (order.length == 0) {
         questionText.innerHTML = "The end";
-        current = 0;
+        order = initialiseOrder(questions.length)
     } else {
         questionText.innerHTML = questions[current].q;
     }
 });
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
 
 function initialiseOrder(length) {
     let order = [];
     for (let i = 0; i < length; i++) {
         order[i] = i;
     }
-
-    //copied from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-    let currentIndex = length, randomIndex;
-    while (currentIndex != 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-
-        [order[currentIndex], order[randomIndex]] = [
-            order[randomIndex], order[currentIndex]];
+    /*
+    RANDOMISING THE ARRAY/ORDER 
+    apparently statring from the end is standard 
+    as it "gives the elements towards the end 
+    an equal chance to "being swapped"" 
+    */
+    for (let i = length - 1; i > 0; i--) {
+        const randIndx = Math.floor(Math.random() * i);
+        [order[i], order[randIndx]] = [order[randIndx], order[i]];
+    }
+    for (x in order) {
+        console.log(order[x]);
     }
 
     return order;
