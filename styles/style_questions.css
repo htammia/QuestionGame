@@ -11,8 +11,9 @@ body {
     padding: 0;
 }
 h1 {
-
-    font-size: 8vh;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    font-size: 5vh;
     font-family: Zen Kurenaido;
     color: rgb(224, 213, 221);
     text-align: center;
@@ -29,14 +30,14 @@ h1 {
     flex-direction: column;
     /*background-color: pink;*/
     margin: 0;
-    margin-top: 10%;
-
+    padding-top: 6vh;
 }
 
 .question_container {
     background-color: rgb(224, 213, 221);
     height: 15vh;
-    margin: 3vh 15vh;
+    margin: 3vh 3vh;
+    padding: 1vh;
 
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@ h1 {
 }
 .question {
     /*background-color: orange;*/
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: Zen Kurenaido;
     color: rgb(42, 35, 59);
     width: 100%;
@@ -66,14 +67,14 @@ h1 {
 }
 
 button {
+
     background-color: rgba(110, 63, 163, 0.8);
     padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
 
-
     color: rgb(224, 213, 221);
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-family: Roboto;
 
     border: 2px solid #4F40D2;
@@ -94,14 +95,25 @@ button:active {
     background-color: #4F40D2;
 }
 
-@media screen and (max-width: 850px) {
-    .content {
-        margin-top: 20%;
-    }
+@media only screen and (min-width: 600px) {
     h1 {
         font-size: 8vh;
     }
     .question_container {
-        margin: 3vh 5vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+    .question {
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .question_container{
+        margin-left: 20vh;
+        margin-right: 20vh;
+    }
+    button {
+        font-size: 3vh;
     }
 }
