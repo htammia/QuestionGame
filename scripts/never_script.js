@@ -81,9 +81,6 @@ const questions = [
         q: "gone to work hungover."
     },
     {
-        q: "faked an orgasm."
-    },
-    {
         q: "used someone else's Netflix account."
     },
     {
